@@ -10,19 +10,10 @@
         public SaplingTreeParamConfig()
         {
             skipForestFloor = true;
-            size = 0.5f;
+            size = 1;
             otherBlockChance = 1;
-            vinesGrowthChance = 1;
-            mossGrowthChance = 1;
-        }
-
-        public SaplingTreeParamConfig(bool skipForestFloor, float size, float otherBlockChance, float vinesGrowthChance, float mossGrowthChance)
-        {
-            this.skipForestFloor = skipForestFloor;
-            this.size = size;
-            this.otherBlockChance = otherBlockChance;
-            this.vinesGrowthChance = vinesGrowthChance;
-            this.mossGrowthChance = mossGrowthChance;
+            vinesGrowthChance = 0.01f;
+            mossGrowthChance = 0.02f;
         }
     }
 
