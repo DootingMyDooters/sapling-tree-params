@@ -50,7 +50,7 @@
             if (resinChanceConfig == null)
             {
                 base.Mod.Logger.Warning("[" + Mod.Info.ModID + "]: config didn't load, generating default config.");
-                api.StoreModConfig<SaplingTreeParamConfig>(new SaplingTreeParamConfig(true, 0.6f + (float)api.World.Rand.NextDouble() * 0.5f, 1, 1, 1 ), configFileName);
+                api.StoreModConfig<SaplingTreeParamConfig>(new SaplingTreeParamConfig(true, 1, 1, 0.01f, 0.02f ), configFileName);
             }
             RCConfig = resinChanceConfig;
 

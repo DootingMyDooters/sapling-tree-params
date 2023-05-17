@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "saplingtreeparams",
+  "name": "Sapling Tree Params",
+  "author": "Dooters",
+  "description": "adds config to VintageStoryData/ModConfig for generating trees from saplings.",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": ""
+  }
+}

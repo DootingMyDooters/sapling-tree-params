@@ -39,4 +39,4 @@ using Vintagestory.API.Common;
 
 [assembly: ModDependency("game")]
 [assembly: ModInfo("SaplingTreeParams", "saplingtreeparams", Version = "1.0.0", Authors = new string[] { "Dooters" },
-        Website = "", Description = "adds chance for resin to generate on trees grown from saplings", RequiredOnClient = false)]
+        Website = "", Description = "adds config to VintageStoryData/ModConfig for generating trees from saplings.", RequiredOnClient = false)]

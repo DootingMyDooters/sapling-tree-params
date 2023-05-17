@@ -7,8 +7,8 @@
     <ProjectGuid>{7B769403-9598-400C-8320-1C40615D6BBC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>resinfromsapling</RootNamespace>
-    <AssemblyName>resinfromsapling</AssemblyName>
+    <RootNamespace>saplingtreeparams</RootNamespace>
+    <AssemblyName>saplingtreeparams</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -29,6 +29,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
@@ -58,5 +61,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sapling.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="modinfo.json" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)modinfo.json" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
