@@ -9,7 +9,7 @@
     {
         ICoreAPI api;
 
-        public string configFileName = "resinchance_config.json";
+        public string configFileName = "saplingtreeparam_config.json";
 
         public SaplingTreeParamConfig RCConfig
         {

@@ -97,11 +97,10 @@ namespace SaplingTreeParams
                 return;
             }
 
-            SaplingTreeParamConfig rcc = sapi.LoadModConfig<SaplingTreeParamConfig>("resinchance_config.json");
+            SaplingTreeParamConfig rcc = sapi.LoadModConfig<SaplingTreeParamConfig>("saplingtreeparam_config.json");
 
             __instance.Api.World.BlockAccessor.SetBlock(0, __instance.Pos);
             __instance.Api.World.BulkBlockAccessor.ReadFromStagedByDefault = true;
-            float size = 0.6f + (float)__instance.Api.World.Rand.NextDouble() * 0.5f;
 
             TreeGenParams pa = new TreeGenParams()
             {
